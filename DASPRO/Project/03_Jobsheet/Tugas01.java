@@ -1,7 +1,7 @@
 import java.util.Scanner;
 public class Tugas01 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
   
     double X;
     double Y;
@@ -11,13 +11,13 @@ public class Tugas01 {
 
 
     System.out.print("Masukkan Harga Laptop: ");
-    X = scanner.nextDouble();
+    X = sc.nextDouble();
 
     System.out.print("Masukkan Uang Muka: ");
-    Y = scanner.nextDouble();
+    Y = sc.nextDouble();
 
     System.out.print("Masukkan Mau Cicil Berapa Bulan: ");
-    Z = scanner.nextDouble();
+    Z = sc.nextDouble();
 
    double totalCicilan = (X - Y) / Z;
    double totalAkhir = totalCicilan + ((X - Y)* 0.02);
